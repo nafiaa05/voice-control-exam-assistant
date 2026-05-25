@@ -1,0 +1,896 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "email": "admin@exam.com",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "admin"
+    }
+  ],
+  "students": [
+    {
+      "id": "6bdb620b",
+      "name": "Test Student",
+      "email": "s@test.com",
+      "regNo": "21CS001",
+      "password": "9b8769a4a742959a2d0298c36fb70623f2dfacda8436237df08d8dfd5b37374c",
+      "role": "student",
+      "createdAt": "2026-03-28"
+    },
+    {
+      "id": "26a0d755",
+      "name": "Arif Nafiaa",
+      "email": "nafiaa@gmail.com",
+      "regNo": "222310176",
+      "password": "ffbb0452ec04a8ef519167f8df8f56ace5379eb8c711fa1c47a96e573a7f87a9",
+      "role": "student",
+      "createdAt": "2026-03-30"
+    },
+    {
+      "id": "52d41bf2",
+      "name": "prashitha",
+      "email": "prashi@gmail.com",
+      "regNo": "98A7190",
+      "password": "8a84d8b172e48772627a10b2702013f80412c848eef812333beda0ae51deb590",
+      "role": "student",
+      "createdAt": "2026-04-02"
+    },
+    {
+      "id": "27477437",
+      "name": "Asha",
+      "email": "asha@gmail.com",
+      "regNo": "222310177",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "role": "student",
+      "createdAt": "2026-04-02"
+    },
+    {
+      "id": "c444a2bf",
+      "name": "jeevitha",
+      "email": "jk9788168@gmail.com",
+      "regNo": "222310188",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "role": "student",
+      "createdAt": "2026-04-02"
+    }
+  ],
+  "tests": [
+    {
+      "id": "18affc0c",
+      "subject": "PYTHON",
+      "description": "python test for student",
+      "maxAttempts": 3,
+      "duration": 30,
+      "questions": [
+        {
+          "question": "Which of the following is the correct way to define a function in Python?",
+          "options": [
+            "def myFunc():",
+            "define myFunc():",
+            "function myFunc():",
+            "func myFunc():"
+          ],
+          "answer": "def myFunc():"
+        },
+        {
+          "question": "What is the output of print(type([]))?",
+          "options": [
+            "<class 'dict'>",
+            "<class 'list'>",
+            "<class 'set'>",
+            "<class 'tuple'>"
+          ],
+          "answer": "<class 'list'>"
+        },
+        {
+          "question": "Which of the following is immutable in Python?",
+          "options": [
+            "Tuple",
+            "Dictionary",
+            "List",
+            "Set"
+          ],
+          "answer": "Tuple"
+        },
+        {
+          "question": "What is the output of print(2 ** 3)?",
+          "options": [
+            "6",
+            "16",
+            "8",
+            "9"
+          ],
+          "answer": "8"
+        },
+        {
+          "question": "Which of the following is used to handle exceptions in Python?",
+          "options": [
+            "for-while",
+            "if-else",
+            "switch-case",
+            "try-except"
+          ],
+          "answer": "try-except"
+        },
+        {
+          "question": "What is the output of print(bool(0))?",
+          "options": [
+            "None",
+            "0",
+            "False",
+            "True"
+          ],
+          "answer": "False"
+        },
+        {
+          "question": "Which of the following is NOT a valid Python keyword?",
+          "options": [
+            "loop",
+            "break",
+            "continue",
+            "pass"
+          ],
+          "answer": "loop"
+        },
+        {
+          "question": "What is the correct way to import the math module?",
+          "options": [
+            "using math",
+            "include math",
+            "require math",
+            "import math"
+          ],
+          "answer": "import math"
+        },
+        {
+          "question": "Which of the following functions is used to get user input in Python?",
+          "options": [
+            "input()",
+            "read()",
+            "get()",
+            "scan()"
+          ],
+          "answer": "input()"
+        },
+        {
+          "question": "What is the output of print('Hello' * 3)?",
+          "options": [
+            "Error",
+            "HelloHelloHello",
+            "Hello Hello Hello",
+            "Hello3"
+          ],
+          "answer": "HelloHelloHello"
+        }
+      ],
+      "createdAt": "2026-03-30",
+      "active": true
+    },
+    {
+      "id": "2d3536aa",
+      "subject": "Java",
+      "description": "java test for student",
+      "maxAttempts": 3,
+      "duration": 30,
+      "questions": [
+        {
+          "question": "Which keyword is used to define a class in Java?",
+          "options": [
+            "object",
+            "class",
+            "struct",
+            "define"
+          ],
+          "answer": "class"
+        },
+        {
+          "question": "Which method is the entry point of a Java program?",
+          "options": [
+            "init()",
+            "start()",
+            "main()",
+            "run()"
+          ],
+          "answer": "main()"
+        },
+        {
+          "question": "Which of the following is not a primitive data type in Java?",
+          "options": [
+            "boolean",
+            "double",
+            "int",
+            "String"
+          ],
+          "answer": "String"
+        },
+        {
+          "question": "Which operator is used for object reference comparison in Java?",
+          "options": [
+            "equals()",
+            "==",
+            "compareTo()",
+            "!="
+          ],
+          "answer": "=="
+        },
+        {
+          "question": "Which of these is used to handle exceptions in Java?",
+          "options": [
+            "for loop",
+            "if-else",
+            "try-catch",
+            "switch"
+          ],
+          "answer": "try-catch"
+        },
+        {
+          "question": "Which package is automatically imported in every Java program?",
+          "options": [
+            "java.lang",
+            "java.net",
+            "java.io",
+            "java.util"
+          ],
+          "answer": "java.lang"
+        },
+        {
+          "question": "Which keyword is used to inherit a class in Java?",
+          "options": [
+            "super",
+            "inherits",
+            "implements",
+            "extends"
+          ],
+          "answer": "extends"
+        },
+        {
+          "question": "Which of the following is true about constructors in Java?",
+          "options": [
+            "They can return values",
+            "They can be static",
+            "They must have the same name as the class",
+            "They are declared using the \u2018constructor\u2019 keyword"
+          ],
+          "answer": "They must have the same name as the class"
+        },
+        {
+          "question": "Which collection class allows key-value pairs and does not permit duplicate keys?",
+          "options": [
+            "HashSet",
+            "HashMap",
+            "ArrayList",
+            "LinkedList"
+          ],
+          "answer": "HashMap"
+        },
+        {
+          "question": "Which keyword is used to prevent a class from being subclassed?",
+          "options": [
+            "final",
+            "static",
+            "abstract",
+            "private"
+          ],
+          "answer": "final"
+        }
+      ],
+      "createdAt": "2026-03-31",
+      "active": true
+    },
+    {
+      "id": "6bb6a75b",
+      "subject": "Data Analysis",
+      "description": "data analysis test for student",
+      "maxAttempts": 3,
+      "duration": 30,
+      "questions": [
+        {
+          "question": "Which of the following best describes Data Analysis?",
+          "options": [
+            "Collecting raw data",
+            "Cleaning and interpreting data",
+            "Designing databases",
+            "Writing code"
+          ],
+          "answer": "Cleaning and interpreting data"
+        },
+        {
+          "question": "Which tool is most commonly used for Data Analysis in Python?",
+          "options": [
+            "NumPy",
+            "pandas",
+            "TensorFlow",
+            "Django"
+          ],
+          "answer": "pandas"
+        },
+        {
+          "question": "What is the purpose of Exploratory Data Analysis (EDA)?",
+          "options": [
+            "To build predictive models",
+            "To clean missing values",
+            "To summarize and visualize data",
+            "To store data in databases"
+          ],
+          "answer": "To summarize and visualize data"
+        },
+        {
+          "question": "Which of the following is NOT a type of Data Analysis?",
+          "options": [
+            "Descriptive",
+            "Diagnostic",
+            "Predictive",
+            "Illustrative"
+          ],
+          "answer": "Illustrative"
+        },
+        {
+          "question": "Which chart is best suited to show the distribution of a dataset?",
+          "options": [
+            "Line chart",
+            "Scatter plot",
+            "Histogram",
+            "Pie chart"
+          ],
+          "answer": "Histogram"
+        },
+        {
+          "question": "In SQL, which command is used to retrieve data from a database?",
+          "options": [
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "DELETE"
+          ],
+          "answer": "SELECT"
+        },
+        {
+          "question": "Which measure of central tendency is most affected by outliers?",
+          "options": [
+            "Mean",
+            "Median",
+            "Mode",
+            "Range"
+          ],
+          "answer": "Mean"
+        },
+        {
+          "question": "Which of the following is used to detect correlation between two variables?",
+          "options": [
+            "Regression analysis",
+            "Pearson\u2019s correlation coefficient",
+            "Chi-square test",
+            "ANOVA"
+          ],
+          "answer": "Pearson\u2019s correlation coefficient"
+        },
+        {
+          "question": "Which visualization is best for showing relationships between two continuous variables?",
+          "options": [
+            "Bar chart",
+            "Scatter plot",
+            "Pie chart",
+            "Box plot"
+          ],
+          "answer": "Scatter plot"
+        },
+        {
+          "question": "Which of the following is a supervised machine learning technique used in Data Analysis?",
+          "options": [
+            "Clustering",
+            "Association rule mining",
+            "Regression",
+            "Dimensionality reduction"
+          ],
+          "answer": "Regression"
+        }
+      ],
+      "createdAt": "2026-03-31",
+      "active": true
+    },
+    {
+      "id": "724abc4e",
+      "subject": "Aptitude",
+      "description": "aptitude test for student",
+      "maxAttempts": 3,
+      "duration": 30,
+      "questions": [
+        {
+          "question": "If 5 pencils cost \u20b925, how much do 8 pencils cost?",
+          "options": [
+            "\u20b935",
+            "\u20b940",
+            "\u20b945",
+            "\u20b950"
+          ],
+          "answer": "\u20b940"
+        },
+        {
+          "question": "What is the next number in the series: 2, 6, 12, 20, ?",
+          "options": [
+            "28",
+            "32",
+            "30",
+            "36"
+          ],
+          "answer": "28"
+        },
+        {
+          "question": "A train 120 m long passes a man standing on a platform in 12 seconds. What is the speed of the train?",
+          "options": [
+            "30 km/h",
+            "36 km/h",
+            "40 km/h",
+            "45 km/h"
+          ],
+          "answer": "36 km/h"
+        },
+        {
+          "question": "If the ratio of boys to girls in a class is 3:2 and there are 30 students, how many are girls?",
+          "options": [
+            "10",
+            "18",
+            "12",
+            "15"
+          ],
+          "answer": "12"
+        },
+        {
+          "question": "The average of 10 numbers is 25. If one number is removed, the average becomes 24. What is the removed number?",
+          "options": [
+            "30",
+            "45",
+            "40",
+            "35"
+          ],
+          "answer": "35"
+        },
+        {
+          "question": "A man spends 1/3 of his salary on rent, 1/5 on food, and saves the rest. If his salary is \u20b930,000, how much does he save?",
+          "options": [
+            "\u20b912,000",
+            "\u20b914,000",
+            "\u20b915,000",
+            "\u20b916,000"
+          ],
+          "answer": "\u20b914,000"
+        },
+        {
+          "question": "If the simple interest on \u20b95000 at 10% per annum for 2 years is X, what is X?",
+          "options": [
+            "\u20b9500",
+            "\u20b91000",
+            "\u20b91500",
+            "\u20b92000"
+          ],
+          "answer": "\u20b91000"
+        },
+        {
+          "question": "What is the probability of getting a 3 when a fair die is rolled?",
+          "options": [
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/4"
+          ],
+          "answer": "1/6"
+        },
+        {
+          "question": "If the perimeter of a square is 48 cm, what is its area?",
+          "options": [
+            "145 cm\u00b2",
+            "256 cm\u00b2",
+            "144 cm\u00b2",
+            "192 cm\u00b2"
+          ],
+          "answer": "144 cm\u00b2"
+        },
+        {
+          "question": "A boat goes 12 km downstream in 3 hours. The speed of the stream is 2 km/h. What is the speed of the boat in still water?",
+          "options": [
+            "2 km/h",
+            "4 km/h",
+            "8 km/h",
+            "6 km/h"
+          ],
+          "answer": "6 km/h"
+        }
+      ],
+      "createdAt": "2026-03-31",
+      "active": true
+    }
+  ],
+  "attempts": [
+    {
+      "id": "d7c55a4b",
+      "studentId": "ef5151f9",
+      "testId": "demo01",
+      "subject": "Machine Learning",
+      "score": 0,
+      "total": 5,
+      "percent": 0.0,
+      "details": [
+        {
+          "question": "What does ML stand for?",
+          "given": "",
+          "correct": "Machine Learning",
+          "isCorrect": false
+        },
+        {
+          "question": "Which algorithm is used for classification?",
+          "given": "",
+          "correct": "Decision Tree",
+          "isCorrect": false
+        },
+        {
+          "question": "What is overfitting?",
+          "given": "",
+          "correct": "Model performs well on training data but poorly on test data",
+          "isCorrect": false
+        },
+        {
+          "question": "Which technique reduces overfitting?",
+          "given": "",
+          "correct": "Regularization",
+          "isCorrect": false
+        },
+        {
+          "question": "What is supervised learning?",
+          "given": "",
+          "correct": "Learning with labeled data",
+          "isCorrect": false
+        }
+      ],
+      "tabWarnings": 3,
+      "cameraWarnings": 0,
+      "autoSubmitted": true,
+      "submittedAt": "2026-03-29T08:44:11.941766"
+    },
+    {
+      "id": "19fac272",
+      "studentId": "ef5151f9",
+      "testId": "demo01",
+      "subject": "Machine Learning",
+      "score": 0,
+      "total": 5,
+      "percent": 0.0,
+      "details": [
+        {
+          "question": "What does ML stand for?",
+          "given": "",
+          "correct": "Machine Learning",
+          "isCorrect": false
+        },
+        {
+          "question": "Which algorithm is used for classification?",
+          "given": "",
+          "correct": "Decision Tree",
+          "isCorrect": false
+        },
+        {
+          "question": "What is overfitting?",
+          "given": "",
+          "correct": "Model performs well on training data but poorly on test data",
+          "isCorrect": false
+        },
+        {
+          "question": "Which technique reduces overfitting?",
+          "given": "",
+          "correct": "Regularization",
+          "isCorrect": false
+        },
+        {
+          "question": "What is supervised learning?",
+          "given": "",
+          "correct": "Learning with labeled data",
+          "isCorrect": false
+        }
+      ],
+      "tabWarnings": 3,
+      "cameraWarnings": 0,
+      "autoSubmitted": true,
+      "submittedAt": "2026-03-29T08:51:02.477832"
+    },
+    {
+      "id": "54290385",
+      "studentId": "26a0d755",
+      "testId": "18affc0c",
+      "subject": "PYTHON",
+      "score": 8,
+      "total": 10,
+      "percent": 80.0,
+      "details": [
+        {
+          "question": "Which of the following is the correct way to define a function in Python?",
+          "given": "def myFunc():",
+          "correct": "def myFunc():",
+          "isCorrect": true
+        },
+        {
+          "question": "What is the output of print(type([]))?",
+          "given": "<class 'dict'>",
+          "correct": "<class 'list'>",
+          "isCorrect": false
+        },
+        {
+          "question": "Which of the following is immutable in Python?",
+          "given": "Tuple",
+          "correct": "Tuple",
+          "isCorrect": true
+        },
+        {
+          "question": "What is the output of print(2 ** 3)?",
+          "given": "8",
+          "correct": "8",
+          "isCorrect": true
+        },
+        {
+          "question": "Which of the following is used to handle exceptions in Python?",
+          "given": "for-while",
+          "correct": "try-except",
+          "isCorrect": false
+        },
+        {
+          "question": "What is the output of print(bool(0))?",
+          "given": "False",
+          "correct": "False",
+          "isCorrect": true
+        },
+        {
+          "question": "Which of the following is NOT a valid Python keyword?",
+          "given": "loop",
+          "correct": "loop",
+          "isCorrect": true
+        },
+        {
+          "question": "What is the correct way to import the math module?",
+          "given": "import math",
+          "correct": "import math",
+          "isCorrect": true
+        },
+        {
+          "question": "Which of the following functions is used to get user input in Python?",
+          "given": "input()",
+          "correct": "input()",
+          "isCorrect": true
+        },
+        {
+          "question": "What is the output of print('Hello' * 3)?",
+          "given": "HelloHelloHello",
+          "correct": "HelloHelloHello",
+          "isCorrect": true
+        }
+      ],
+      "tabWarnings": 2,
+      "cameraWarnings": 0,
+      "autoSubmitted": false,
+      "submittedAt": "2026-03-31T11:55:14.806259"
+    },
+    {
+      "id": "68ef81cf",
+      "studentId": "52d41bf2",
+      "testId": "2d3536aa",
+      "subject": "Java",
+      "score": 2,
+      "total": 10,
+      "percent": 20.0,
+      "details": [
+        {
+          "question": "Which keyword is used to define a class in Java?",
+          "given": "class",
+          "correct": "class",
+          "isCorrect": true
+        },
+        {
+          "question": "Which method is the entry point of a Java program?",
+          "given": "main()",
+          "correct": "main()",
+          "isCorrect": true
+        },
+        {
+          "question": "Which of the following is not a primitive data type in Java?",
+          "given": "",
+          "correct": "String",
+          "isCorrect": false
+        },
+        {
+          "question": "Which operator is used for object reference comparison in Java?",
+          "given": "",
+          "correct": "==",
+          "isCorrect": false
+        },
+        {
+          "question": "Which of these is used to handle exceptions in Java?",
+          "given": "",
+          "correct": "try-catch",
+          "isCorrect": false
+        },
+        {
+          "question": "Which package is automatically imported in every Java program?",
+          "given": "",
+          "correct": "java.lang",
+          "isCorrect": false
+        },
+        {
+          "question": "Which keyword is used to inherit a class in Java?",
+          "given": "",
+          "correct": "extends",
+          "isCorrect": false
+        },
+        {
+          "question": "Which of the following is true about constructors in Java?",
+          "given": "",
+          "correct": "They must have the same name as the class",
+          "isCorrect": false
+        },
+        {
+          "question": "Which collection class allows key-value pairs and does not permit duplicate keys?",
+          "given": "",
+          "correct": "HashMap",
+          "isCorrect": false
+        },
+        {
+          "question": "Which keyword is used to prevent a class from being subclassed?",
+          "given": "",
+          "correct": "final",
+          "isCorrect": false
+        }
+      ],
+      "tabWarnings": 4,
+      "cameraWarnings": 0,
+      "autoSubmitted": true,
+      "submittedAt": "2026-04-02T16:00:07.672674"
+    },
+    {
+      "id": "fc5ccfea",
+      "studentId": "27477437",
+      "testId": "6bb6a75b",
+      "subject": "Data Analysis",
+      "score": 4,
+      "total": 10,
+      "percent": 40.0,
+      "details": [
+        {
+          "question": "Which of the following best describes Data Analysis?",
+          "given": "Collecting raw data",
+          "correct": "Cleaning and interpreting data",
+          "isCorrect": false
+        },
+        {
+          "question": "Which tool is most commonly used for Data Analysis in Python?",
+          "given": "pandas",
+          "correct": "pandas",
+          "isCorrect": true
+        },
+        {
+          "question": "What is the purpose of Exploratory Data Analysis (EDA)?",
+          "given": "To build predictive models",
+          "correct": "To summarize and visualize data",
+          "isCorrect": false
+        },
+        {
+          "question": "Which of the following is NOT a type of Data Analysis?",
+          "given": "Illustrative",
+          "correct": "Illustrative",
+          "isCorrect": true
+        },
+        {
+          "question": "Which chart is best suited to show the distribution of a dataset?",
+          "given": "Line chart",
+          "correct": "Histogram",
+          "isCorrect": false
+        },
+        {
+          "question": "In SQL, which command is used to retrieve data from a database?",
+          "given": "SELECT",
+          "correct": "SELECT",
+          "isCorrect": true
+        },
+        {
+          "question": "Which measure of central tendency is most affected by outliers?",
+          "given": "Range",
+          "correct": "Mean",
+          "isCorrect": false
+        },
+        {
+          "question": "Which of the following is used to detect correlation between two variables?",
+          "given": "Regression analysis",
+          "correct": "Pearson\u2019s correlation coefficient",
+          "isCorrect": false
+        },
+        {
+          "question": "Which visualization is best for showing relationships between two continuous variables?",
+          "given": "Bar chart",
+          "correct": "Scatter plot",
+          "isCorrect": false
+        },
+        {
+          "question": "Which of the following is a supervised machine learning technique used in Data Analysis?",
+          "given": "Regression",
+          "correct": "Regression",
+          "isCorrect": true
+        }
+      ],
+      "tabWarnings": 0,
+      "cameraWarnings": 0,
+      "autoSubmitted": false,
+      "submittedAt": "2026-04-02T16:09:39.536765"
+    },
+    {
+      "id": "5885c402",
+      "studentId": "c444a2bf",
+      "testId": "2d3536aa",
+      "subject": "Java",
+      "score": 7,
+      "total": 10,
+      "percent": 70.0,
+      "details": [
+        {
+          "question": "Which keyword is used to define a class in Java?",
+          "given": "class",
+          "correct": "class",
+          "isCorrect": true
+        },
+        {
+          "question": "Which method is the entry point of a Java program?",
+          "given": "main()",
+          "correct": "main()",
+          "isCorrect": true
+        },
+        {
+          "question": "Which of the following is not a primitive data type in Java?",
+          "given": "String",
+          "correct": "String",
+          "isCorrect": true
+        },
+        {
+          "question": "Which operator is used for object reference comparison in Java?",
+          "given": "equals()",
+          "correct": "==",
+          "isCorrect": false
+        },
+        {
+          "question": "Which of these is used to handle exceptions in Java?",
+          "given": "try-catch",
+          "correct": "try-catch",
+          "isCorrect": true
+        },
+        {
+          "question": "Which package is automatically imported in every Java program?",
+          "given": "java.lang",
+          "correct": "java.lang",
+          "isCorrect": true
+        },
+        {
+          "question": "Which keyword is used to inherit a class in Java?",
+          "given": "extends",
+          "correct": "extends",
+          "isCorrect": true
+        },
+        {
+          "question": "Which of the following is true about constructors in Java?",
+          "given": "They must have the same name as the class",
+          "correct": "They must have the same name as the class",
+          "isCorrect": true
+        },
+        {
+          "question": "Which collection class allows key-value pairs and does not permit duplicate keys?",
+          "given": "ArrayList",
+          "correct": "HashMap",
+          "isCorrect": false
+        },
+        {
+          "question": "Which keyword is used to prevent a class from being subclassed?",
+          "given": "abstract",
+          "correct": "final",
+          "isCorrect": false
+        }
+      ],
+      "tabWarnings": 0,
+      "cameraWarnings": 0,
+      "autoSubmitted": false,
+      "submittedAt": "2026-04-02T16:17:18.841540"
+    }
+  ]
+}

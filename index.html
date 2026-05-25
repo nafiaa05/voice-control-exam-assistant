@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VoiceExam — AI Voice Examination System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="page-login" class="page active">
+  <div class="login-bg">
+    <svg class="bg-svg" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="rg1" cx="25%" cy="30%" r="70%"><stop offset="0%" stop-color="#162040"/><stop offset="100%" stop-color="#080c18"/></radialGradient>
+        <radialGradient id="rg2" cx="80%" cy="75%" r="55%"><stop offset="0%" stop-color="#0d2035" stop-opacity="1"/><stop offset="100%" stop-color="#080c18" stop-opacity="1"/></radialGradient>
+        <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2dd4bf"/><stop offset="100%" stop-color="#6366f1"/></linearGradient>
+      </defs>
+      <rect width="1440" height="900" fill="url(#rg1)"/>
+      <ellipse cx="300" cy="250" rx="400" ry="300" fill="#0ea5e9" opacity="0.04"/>
+      <ellipse cx="1200" cy="650" rx="450" ry="320" fill="#2dd4bf" opacity="0.05"/>
+      <ellipse cx="800" cy="450" rx="300" ry="200" fill="#6366f1" opacity="0.06"/>
+      <g stroke="#1e3a5f" stroke-width="1" opacity="0.6">
+        <line x1="0" y1="180" x2="360" y2="180"/><line x1="360" y1="180" x2="360" y2="300"/>
+        <line x1="360" y1="300" x2="600" y2="300"/><line x1="600" y1="300" x2="600" y2="180"/>
+        <line x1="600" y1="180" x2="900" y2="180"/><line x1="900" y1="180" x2="900" y2="380"/>
+        <line x1="900" y1="380" x2="1150" y2="380"/><line x1="1150" y1="380" x2="1150" y2="180"/>
+        <line x1="1150" y1="180" x2="1440" y2="180"/>
+        <line x1="0" y1="500" x2="220" y2="500"/><line x1="220" y1="500" x2="220" y2="650"/>
+        <line x1="220" y1="650" x2="730" y2="650"/><line x1="730" y1="650" x2="730" y2="780"/>
+        <line x1="730" y1="780" x2="1440" y2="780"/>
+        <line x1="0" y1="780" x2="160" y2="780"/><line x1="160" y1="780" x2="160" y2="500"/>
+        <line x1="160" y1="500" x2="450" y2="500"/><line x1="450" y1="500" x2="450" y2="330"/>
+        <line x1="450" y1="330" x2="960" y2="330"/><line x1="960" y1="330" x2="960" y2="550"/>
+        <line x1="960" y1="550" x2="1440" y2="550"/>
+      </g>
+      <g fill="#2dd4bf" opacity="0.5">
+        <circle cx="360" cy="180" r="4"/><circle cx="600" cy="300" r="4"/>
+        <circle cx="900" cy="180" r="4"/><circle cx="1150" cy="380" r="4"/>
+        <circle cx="220" cy="500" r="4"/><circle cx="730" cy="650" r="4"/>
+        <circle cx="160" cy="780" r="4"/><circle cx="450" cy="330" r="4"/>
+        <circle cx="960" cy="550" r="4"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="login-wrap">
+    <div class="login-brand">
+      <div class="logo-wrap">
+        <svg width="76" height="76" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="lgo" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2dd4bf"/><stop offset="100%" stop-color="#6366f1"/></linearGradient></defs>
+          <rect width="76" height="76" rx="20" fill="#0f172a"/>
+          <rect width="76" height="76" rx="20" fill="none" stroke="url(#lgo)" stroke-width="1.5" opacity="0.7"/>
+          <rect x="29" y="10" width="18" height="28" rx="9" fill="url(#lgo)"/>
+          <path d="M18 36 C18 52 58 52 58 36" stroke="url(#lgo)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <line x1="38" y1="52" x2="38" y2="60" stroke="url(#lgo)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="27" y1="60" x2="49" y2="60" stroke="url(#lgo)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M64 30 C68 35 68 41 64 46" stroke="#2dd4bf" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+          <path d="M12 30 C8 35 8 41 12 46" stroke="#2dd4bf" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+          <circle cx="60" cy="20" r="4" fill="#2dd4bf" opacity="0.6"/>
+          <circle cx="16" cy="20" r="4" fill="#6366f1" opacity="0.6"/>
+        </svg>
+      </div>
+      <h1>VoiceExam</h1>
+      <p>AI-Powered Voice Examination System</p>
+    </div>
+
+    <div class="login-card">
+      <div class="tab-switch">
+        <button class="tab-btn active" onclick="switchTab('login',this)">Sign In</button>
+        <button class="tab-btn" onclick="switchTab('register',this)">Register</button>
+      </div>
+      <div id="tab-login">
+        <div class="field-group"><label>Email Address</label><input type="email" id="login-email" placeholder="you@institution.edu"/></div>
+        <div class="field-group"><label>Password</label><input type="password" id="login-password" placeholder="••••••••"/></div>
+        <div id="login-err" class="err-msg"></div>
+        <button class="btn-primary" onclick="doLogin()">Sign In →</button>
+      </div>
+      <div id="tab-register" style="display:none">
+        <div class="field-group"><label>Full Name</label><input type="text" id="reg-name" placeholder="Your full name"/></div>
+        <div class="field-group"><label>Register Number</label><input type="text" id="reg-regno" placeholder="e.g. 21AI001"/></div>
+        <div class="field-group"><label>Email Address</label><input type="email" id="reg-email" placeholder="you@institution.edu"/></div>
+        <div class="field-group"><label>Password</label><input type="password" id="reg-password" placeholder="Min 6 characters"/></div>
+        <div id="reg-err" class="err-msg"></div>
+        <button class="btn-primary" onclick="doRegister()">Create Account →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STUDENT -->
+<div id="page-student" class="page">
+  <nav class="navbar">
+    <div class="nav-brand"><span class="brand-logo">V</span>VoiceExam</div>
+    <div class="nav-links">
+      <button class="nav-btn active" onclick="studentView('tests',this)">My Tests</button>
+      <button class="nav-btn" onclick="studentView('results',this)">Results</button>
+    </div>
+    <div class="nav-right">
+      <span id="student-name-nav" class="nav-user"></span>
+      <button class="btn-logout" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+  <div id="sv-tests" class="dash-view active">
+    <div class="dash-header"><h2>Available Tests</h2><p>Speak your answers — voice-first examination</p></div>
+    <div id="test-cards" class="cards-grid"></div>
+  </div>
+  <div id="sv-results" class="dash-view">
+    <div class="dash-header"><h2>My Results</h2><p>Your performance across all subjects</p></div>
+    <div id="result-cards" class="cards-grid"></div>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div id="page-admin" class="page">
+  <nav class="navbar">
+    <div class="nav-brand"><span class="brand-logo">V</span>VoiceExam <span class="badge-admin">Admin</span></div>
+    <div class="nav-links">
+      <button class="nav-btn active" onclick="adminView('dashboard',this)">Dashboard</button>
+      <button class="nav-btn" onclick="adminView('create',this)">Create Test</button>
+      <button class="nav-btn" onclick="adminView('students',this)">Students</button>
+      <button class="nav-btn" onclick="adminView('results',this)">Results</button>
+    </div>
+    <button class="btn-logout" onclick="logout()">Logout</button>
+  </nav>
+  <div id="av-dashboard" class="dash-view active">
+    <div class="dash-header"><h2>Dashboard</h2></div>
+    <div class="stats-row" id="admin-stats"></div>
+    <div class="dash-header" style="margin-top:2rem"><h3>All Tests</h3></div>
+    <div id="admin-test-list" class="table-wrap"></div>
+  </div>
+  <div id="av-create" class="dash-view">
+    <div class="dash-header"><h2>Create New Test</h2></div>
+    <div class="create-form">
+      <div class="form-row">
+        <div class="field-group"><label>Subject Name</label><input type="text" id="ct-subject" placeholder="e.g. Machine Learning"/></div>
+        <div class="field-group"><label>Description</label><input type="text" id="ct-desc" placeholder="Brief description"/></div>
+      </div>
+      <div class="form-row">
+        <div class="field-group"><label>Duration (minutes)</label><input type="number" id="ct-duration" value="30" min="5" max="120"/></div>
+        <div class="field-group"><label>Max Attempts per Student</label><input type="number" id="ct-attempts" value="2" min="1" max="5"/></div>
+      </div>
+      <div class="questions-section">
+        <div class="qs-header">
+          <h3>Questions <span id="q-count">(0)</span></h3>
+          <small>Min 5 · Max 20</small>
+          <button class="btn-add-q" onclick="addQuestion()">+ Add Question</button>
+        </div>
+        <div id="questions-list"></div>
+      </div>
+      <div id="create-err" class="err-msg"></div>
+      <button class="btn-primary" style="max-width:220px" onclick="submitTest()">Publish Test →</button>
+    </div>
+  </div>
+  <div id="av-students" class="dash-view">
+    <div class="dash-header"><h2>Registered Students</h2></div>
+    <div id="students-table" class="table-wrap"></div>
+  </div>
+  <div id="av-results" class="dash-view">
+    <div class="dash-header"><h2>Results by Subject</h2></div>
+    <div id="subject-filter" class="filter-row"></div>
+    <div id="results-table" class="table-wrap"></div>
+  </div>
+</div>
+
+<!-- EXAM -->
+<div id="page-exam" class="page">
+  <div id="warn-overlay" class="warn-overlay" style="display:none">
+    <div class="warn-box">
+      <div class="warn-icon">⚠️</div>
+      <h2 id="warn-title">Warning</h2>
+      <p id="warn-msg"></p>
+      <button class="btn-primary" style="max-width:180px;margin:0 auto" onclick="closeWarn()">Understood</button>
+    </div>
+  </div>
+
+  <div class="exam-layout">
+    <div class="exam-sidebar">
+      <!-- SESSION MIC CONTROL -->
+      <div class="mic-session-box">
+        <div class="mic-session-title">🎙️ Voice Control</div>
+        <button class="mic-session-btn" id="mic-session-btn" onclick="toggleSessionMic()">
+          <span id="mic-s-icon">🎙️</span>
+          <span id="mic-s-label">Start Listening</span>
+        </button>
+        <div id="voice-status" class="voice-status idle">
+          <div class="pulse-ring"></div>
+          <span id="vs-text">Mic is off — click to activate</span>
+        </div>
+        <div class="transcript-wrap">
+          <span class="trans-label">Heard:</span>
+          <span id="transcript-text">—</span>
+        </div>
+      </div>
+
+      <div class="cam-box">
+        <video id="cam-feed" autoplay muted playsinline></video>
+        <div class="cam-label">📷 Live Monitoring</div>
+      </div>
+      <div class="exam-meta" id="exam-meta"></div>
+      <div class="warn-counters">
+        <div class="warn-item" id="wc-tab">🖥️ Tab Switches: <b id="tab-warn-count">0</b>/2</div>
+        <div class="warn-item" id="wc-cam">📷 Camera Warns: <b id="cam-warn-count">0</b>/2</div>
+      </div>
+      <div class="timer-box">
+        <div class="timer-label">Time Remaining</div>
+        <div id="exam-timer" class="timer-display">--:--</div>
+      </div>
+      <div class="voice-log-box">
+        <div class="vl-header">🎙️ Voice Activity Log</div>
+        <div id="voice-log-list" class="voice-log-list"><div class="vl-empty">No activity yet</div></div>
+      </div>
+    </div>
+
+    <div class="exam-main">
+      <div class="exam-topbar">
+        <div id="exam-subject-title" class="exam-subject"></div>
+        <div class="q-progress">Q <span id="q-current">1</span> / <span id="q-total">?</span></div>
+      </div>
+      <div id="q-dots" class="q-dots-row"></div>
+      <div class="question-card">
+        <div class="q-number">Question <span id="qn-num">1</span></div>
+        <div id="q-text" class="q-text"></div>
+        <div id="exam-options" class="exam-options"></div>
+        <div class="exam-actions">
+          <button class="btn-tts" onclick="readQuestion()">🔊 Read Question Aloud</button>
+        </div>
+      </div>
+      <div class="cmd-panel">
+        <div class="cmd-panel-title">🎙️ Voice Commands</div>
+        <div class="cmd-grid">
+          <div class="cmd-item"><span class="cmd-word">"Next"</span><span class="cmd-desc">Next question</span></div>
+          <div class="cmd-item"><span class="cmd-word">"Previous"</span><span class="cmd-desc">Prev question</span></div>
+          <div class="cmd-item"><span class="cmd-word">"Repeat"</span><span class="cmd-desc">Read question</span></div>
+          <div class="cmd-item"><span class="cmd-word">"Check Time"</span><span class="cmd-desc">Time left</span></div>
+          <div class="cmd-item"><span class="cmd-word">"Option A/B/C/D"</span><span class="cmd-desc">Select answer</span></div>
+          <div class="cmd-item"><span class="cmd-word">"Submit"</span><span class="cmd-desc">Submit exam</span></div>
+        </div>
+        <div class="cmd-keys">Keys: <b>← →</b> Navigate &nbsp;|&nbsp; <b>R</b> Read aloud &nbsp;|&nbsp; <b>Space</b> Mic on/off</div>
+      </div>
+      <div class="exam-nav">
+        <button class="btn-prev" onclick="prevQ()" id="btn-prev">← Prev</button>
+        <button class="btn-next" onclick="nextQ()" id="btn-next">Next →</button>
+        <button class="btn-submit-exam" onclick="confirmSubmit()">Submit Test ✓</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESULT -->
+<div id="page-result" class="page">
+  <div class="result-wrap">
+    <div class="result-card">
+      <div id="result-emoji" class="result-emoji">🎉</div>
+      <h2 id="result-title">Test Submitted</h2>
+      <div class="score-ring-wrap">
+        <svg viewBox="0 0 120 120" class="score-ring">
+          <circle cx="60" cy="60" r="50" fill="none" stroke="var(--border)" stroke-width="8"/>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="var(--accent)" stroke-width="8"
+                  stroke-dasharray="314" id="score-arc" stroke-dashoffset="314"
+                  stroke-linecap="round" transform="rotate(-90 60 60)"/>
+        </svg>
+        <div class="score-center">
+          <div id="result-score" class="score-num">0/0</div>
+          <div id="result-pct" class="score-pct">0%</div>
+        </div>
+      </div>
+      <div id="result-details" class="result-details"></div>
+      <button class="btn-primary" onclick="goHome()">Back to Dashboard →</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
